@@ -283,6 +283,22 @@
             background: linear-gradient(135deg, #ff5252 0%, #d84315 100%);
         }
 
+        .recommend-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #d32f2f;
+            background-color: #fff8e1;
+            border: 1px solid #ffc107;
+            border-radius: 8px;
+            margin-right: 10px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            vertical-align: middle;
+            transform: translateY(-2px); /* 🔺微調往上 */
+        }    
+
+        
         /* 響應式設計 */
         @media (max-width: 768px) {
             .main-title {
@@ -327,6 +343,14 @@
                 padding: 10px 16px;
                 font-size: 0.8rem;
             }
+
+            .developer-button {
+                bottom: 15px;
+                right: 15px;
+                padding: 10px 16px;
+                font-size: 0.8rem;
+            }
+            
         }
     </style>
 </head>
@@ -567,7 +591,9 @@
                         
             <!-- 社團法人台灣智慧自動化與機器人協會 -->
             <button class="course-button" onclick="toggleCourse('course4')">
-                <span>導入碳管理-AI工具實戰課程</span>
+                <span>
+                     <span class="recommend-badge">⭐推薦</span>導入碳管理-AI工具實戰課程
+                </span>
                 <span class="toggle-icon">▼</span>
             </button>
             <div class="course-content" id="course4">
